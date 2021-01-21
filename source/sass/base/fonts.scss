@@ -1,0 +1,42 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/montserrat-400.woff2") format("woff2"),
+    url("../fonts/montserrat-400.woff") format("woff"),
+    url('../fonts/montserrat-400.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/montserrat-500.woff2") format("woff2"),
+    url("../fonts/montserrat-500.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/montserrat-600.woff2") format("woff2"),
+    url("../fonts/montserrat-600.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@mixin basic-font($font-size: 16px, $line-height: 28px) {
+  font-size: $font-size;
+  line-height: $line-height;
+  font-weight: 400;
+  color: rgba($basic-black, 0,7);
+}
+
+@mixin weight-font($font-size: 55px, $line-height: 80px) {
+  font-family: "Montserrat", "Arial", "Helvetica", sans-serif;
+  font-size: $font-size;
+  line-height: $line-height;
+  font-weight: 600;
+  color: $basic-black;
+}
