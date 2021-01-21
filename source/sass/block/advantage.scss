@@ -1,0 +1,9 @@
+.advantage {
+  position: relative;
+}
+
+.advantage__item {
+  @include basic-font(16px, 32px);
+
+  color: $light-dark;
+}

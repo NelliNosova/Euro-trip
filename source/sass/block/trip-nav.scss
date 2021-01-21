@@ -1,0 +1,9 @@
+.trip-nav {
+  position: relative;
+}
+
+.trip-nav__lable {
+  @include medium-font(20px, 24px);
+
+  color: rgba($light-dark, 0.3);
+}

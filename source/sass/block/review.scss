@@ -1,0 +1,20 @@
+.review {
+  position: relative;
+}
+
+.review__title {
+  @include medium-font(30px, 37px);
+
+  letter-spacing: -0.691667px;
+}
+
+.review__content {
+  font-size: 14px;
+}
+
+.review__author-name {
+  @include medium-font(16px, 20px);
+
+  font-style: normal;
+  color: $light-dark;
+}

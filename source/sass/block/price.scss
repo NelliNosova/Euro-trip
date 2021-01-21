@@ -1,0 +1,16 @@
+.price {
+  position: relative;
+}
+
+.price__label {
+  @include weight-font(28px, 38px);
+
+  letter-spacing: -1.27273px;
+  color: rgba($basic-dark, 0.7);
+}
+
+.price__appeal {
+  @include basic-font(16px, 24px);
+
+  color: $light-dark;
+}

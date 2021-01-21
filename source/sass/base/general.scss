@@ -22,6 +22,25 @@ img {
   height: auto;
 }
 
+a {
+  text-decoration: none;
+  color: inherit
+}
+
+ul {
+  list-style: none;
+}
+
 .none {
   display: none;
+}
+
+.main-title {
+  @include weight-font;
+
+  letter-spacing: -1.10667px;
+}
+
+.main-content {
+  @include basic-font;
 }

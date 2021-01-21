@@ -1,0 +1,11 @@
+.footer {
+  @include basic-font(14px, 17px);
+
+  color: rgba($basic-dark, 0.5);
+}
+
+.footer__title {
+  @include weight-font(18px, 32px);
+
+  color: $basic-dark;
+}

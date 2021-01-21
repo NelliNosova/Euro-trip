@@ -1,0 +1,6 @@
+.nav {
+  @include medium-font(14px, 17px);
+
+  position: relative;
+  color: $basic-dark;
+}

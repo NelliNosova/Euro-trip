@@ -1,0 +1,13 @@
+.promo {
+  position: relative;
+}
+
+.promo__title {
+  color: $basic-white;
+}
+
+.promo__content {
+  @include basic-font(16px, 27px);
+
+  color: $basic-white;
+}

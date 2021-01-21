@@ -1,0 +1,10 @@
+.order-form {
+  position: relative;
+}
+
+.order-form__input::placeholder {
+  @include basic-font(14px, 17px);
+
+  color: $basic-dark;
+}
+

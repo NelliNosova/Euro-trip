@@ -7,6 +7,7 @@
     <link rel="preload" href="fonts/montserrat-400.woff2" as="font" crossorigin>
     <link rel="preload" href="fonts/montserrat-500.woff2" as="font" crossorigin>
     <link rel="preload" href="fonts/montserrat-600.woff2" as="font" crossorigin>
+    <link rel="preload" href="fonts/montserrat-700.woff2" as="font" crossorigin>
     <link href="css/style.min.css" rel="stylesheet" />
   </head>
   <body class="page__body body">
@@ -20,7 +21,7 @@
         </svg>
       </a>
       <nav class="header__nav nav"> <!-- nav-/-closed; nav-/-open  -->
-        <button class="nav__toggle button button--nav">
+        <button class="nav__toggle btn btn--nav">
           <span class="nav__toggle-main visually-hidden">Открыть меню</span>
           <svg class="nav__svg" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M3.75 21H26.25V20H3.75V21ZM3.75 14.75H26.25V13.75H3.75V14.75ZM3.75 7.5V8.5H26.25V7.5H3.75Z" fill="white"/>
@@ -47,13 +48,13 @@
     </header>
 
     <main class="page__main main">
-      <h1 class="page__title visualy-heddenl">Сайт о путешествиях по Европе</h1>
+      <h1 class="page__title visually-hidden">Сайт о путешествиях по Европе</h1>
       <section class="main__promo promo">
         <h2 class="promo__title main-title">Путешествие по Европе</h2>
-        <p class="promo__content">
+        <p class="promo__content main-content">
           В этом туре вы откроете для себя Европу в новом свете. Вас ждет: море, горы, а также потрясающая красота природы.
         </p>
-        <a class="promo__link" href="#place">
+        <a class="promo__link btn" href="#place">
           смотреть тур
           <svg class="promo__link-svg" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M8 1V15" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -63,7 +64,7 @@
       </section>
       <section class="main__place place" id="place">
         <h2 class="place__title main-title">Места посещения</h2>
-        <p class="place__content">
+        <p class="place__content main-content">
           Вы можете выбрать полный тур или частичный, с посещением первых 3 мест
         </p>
         <ul class="place__list">
@@ -74,7 +75,7 @@
               <source media="(min-width: 1024px)"  srcset="img/greece_desktop@1x.jpg 1x, img/greece_desktop@2x.jpg 2x">
               <img class="place-item__image" src="img/greece_mobile@1x.jpg" srcset="img/greece-mobile@2x.jpg 2x" width="288" alt="Греция">
             </picture>
-            <h3>Греция</h3>
+            <h3 class="place-item__title">Греция</h3>
             <a class="place-item__link" href="#greece">
               смотреть подробнее
             </a>
@@ -86,7 +87,7 @@
               <source media="(min-width: 1024px)"  srcset="img/albania_desktop@1x.jpg 1x, img/albania_desktop@2x.jpg 2x">
               <img class="place-item__image" src="img/albania_mobile@1x.jpg" srcset="img/albania-mobile@2x.jpg 2x" width="288" alt="Албания">
             </picture>
-            <h3>Албания</h3>
+            <h3 class="place-item__title">Албания</h3>
             <a class="place-item__link" href="#albania">
               смотреть подробнее
             </a>
@@ -98,7 +99,7 @@
               <source media="(min-width: 1024px)"  srcset="img/macedonia_desktop@1x.jpg 1x, img/macedonia_desktop@2x.jpg 2x">
               <img class="place-item__image" src="img/macedonia_mobile@1x.jpg" srcset="img/macedonia-mobile@2x.jpg 2x" width="288" alt="Македония">
             </picture>
-            <h3>Македония</h3>
+            <h3 class="place-item__title">Македония</h3>
             <a class="place-item__link" href="#macedonia">
               смотреть подробнее
             </a>
@@ -110,7 +111,7 @@
               <source media="(min-width: 1024px)"  srcset="img/montenegro_desktop@1x.jpg 1x, img/montenegro_desktop@2x.jpg 2x">
               <img class="place-item__image" src="img/montenegro_mobile@1x.jpg" srcset="img/montenegro-mobile@2x.jpg 2x" width="288" alt="Черногория">
             </picture>
-            <h3>Черногория</h3>
+            <h3 class="place-item__title">Черногория</h3>
             <a class="place-item__link" href="#montenegro">
               смотреть подробнее
             </a>
@@ -122,7 +123,7 @@
               <source media="(min-width: 1024px)"  srcset="img/croatia_desktop@1x.jpg 1x, img/croatia_desktop@2x.jpg 2x">
               <img class="place-item__image" src="img/croatia_mobile@1x.jpg" srcset="img/croatia-mobile@2x.jpg 2x" width="288" alt="Хорватия">
             </picture>
-            <h3>Хорватия</h3>
+            <h3 class="place-item__title">Хорватия</h3>
             <a class="place-item__link" href="#croatia">
               смотреть подробнее
             </a>
@@ -135,31 +136,31 @@
           <ul class="trip-nav__list">
             <li class="trip-nav__item">
               <input class="trip-nav__radio" type="radio" name="type-trip" value="greece" id="greece-input">
-              <label class="trip-nav__lable" for="greece-input">Греция</label>
+              <label class="trip-nav__label" for="greece-input">Греция</label>
             </li>
             <li class="trip-nav__item">
               <input class="trip-nav__radio" type="radio" name="type-trip" value="albania" id="albania-input">
-              <label class="trip-nav__lable" for="albania-input">Албания</label>
+              <label class="trip-nav__label" for="albania-input">Албания</label>
             </li>
             <li class="trip-nav__item">
               <input class="trip-nav__radio" type="radio" name="type-trip" value="macedonia" id="macedonia-input">
-              <label class="trip-nav__lable" for="macedonia-input">Македония</label>
+              <label class="trip-nav__label" for="macedonia-input">Македония</label>
             </li>
             <li class="trip-nav__item">
               <input class="trip-nav__radio" type="radio" name="type-trip" value="montenegro" id="montenegro-input">
-              <label class="trip-nav__lable" for="montenegro-input">Черногория</label>
+              <label class="trip-nav__label" for="montenegro-input">Черногория</label>
             </li>
             <li class="trip-nav__item">
               <input class="trip-nav__radio" type="radio" name="type-trip" value="croatia" id="croatia-input">
-              <label class="trip-nav__lable" for="croatia-input">Хорватия</label>
+              <label class="trip-nav__label" for="croatia-input">Хорватия</label>
             </li>
           </ul>
         </nav>
         <ul class="trip__list">
           <li class="trip__item" id="greece">
             <article class="trip__card">
-              <h3 class="trip__title">Греция</h3>
-              <p class="trip__content">
+              <h3 class="trip__title main-title">Греция</h3>
+              <p class="trip__content main-content">
                 На севере Греции находится один из крупнейших комплексов монастырей, расположенных на вершинах скал. Название его «Метеора» буквально переводится как «висящие в воздухе». Этот монастырь основная цель нашего путешествия в Греции. После покарения скал из песчанника и обломочной горной породы, достигающих в высоту 600 метров, наградой будет неописуемая красота природы и атмосфера, царящая в монастырях Метеоры.
               </p>
               <a class="trip__book btn btn--book">
@@ -178,7 +179,7 @@
               <div class="trip__review review">
                 <h4 class="review__title">Отзывы</h4>
                 <blockquote class="review__item">
-                  <p class="review__content">
+                  <p class="review__content main-content">
                     Метеоры в Греции можно сравнить разве что с Монсерратт в Испании. Такие же высоченные скалы. Но здесь потрясает масштаб. Огромная территория, высоко в горах. Ощущение такое, как будто стоишь на краю света!
                   </p>
                   <picture class="trip__item-image">
@@ -192,8 +193,8 @@
           </li>
           <li class="trip__item" id="albania">
             <article class="trip__card">
-              <h3 class="trip__title">Албания</h3>
-              <p class="trip__content">
+              <h3 class="trip__title main-title">Албания</h3>
+              <p class="trip__content main-content">
                 В Албании мы посетим Курорт Ксамиль. Этот курорт поразит вас чистейшей водой и удивительным пляжем. Вначале кажется, что на пляже вас встречает обычный, правда невероятно белоснежный и слишком крупный песок. Однако, присмотревшись, можно понять, что это не песок, а камни, перетёртые до такого мелкого состояния.
               </p>
               <a class="trip__book btn btn--book">
@@ -212,7 +213,7 @@
               <div class="trip__review review">
                 <h4 class="review__title">Отзывы</h4>
                 <blockquote class="review__item">
-                  <p class="review__content">
+                  <p class="review__content main-content">
                     Замечательный курорт, обязательно стоит посетить. В следующий раз возьму с собой сестру, чтобы тоже смогла вкусить все красоты природы :)
                   </p>
                   <picture class="trip__item-image">
@@ -226,8 +227,8 @@
           </li>
           <li class="trip__item" id="macedonia">
             <article class="trip__card">
-              <h3 class="trip__title">Македония</h3>
-              <p class="trip__content">
+              <h3 class="trip__title main-title">Македония</h3>
+              <p class="trip__content main-content">
                 В Македонии нашей целью будет посетить Палаошник, который расположился в удивительно красивой лесистой местности возле Охридского озера и Самуиловой твердыни. А также мы заберемся на вершину горы Татичев Камен где находится  археологический памятник Кокино в длину около 100 метров.
               </p>
               <a class="trip__book btn btn--book">
@@ -246,7 +247,7 @@
               <div class="trip__review review">
                 <h4 class="review__title">Отзывы</h4>
                 <blockquote class="review__item">
-                  <p class="review__content">
+                  <p class="review__content main-content">
                     Я бы сказал необычное старое здание. В архитектуре я не разбираюсь, но подъем в гору был очень веселым так как люди оказались легкими и заводными. Красота природы впечатлила, особенно после долгого пути в гору.
                   </p>
                   <picture class="trip__item-image">
@@ -260,8 +261,8 @@
           </li>
           <li class="trip__item" id="montenegro">
             <article class="trip__card">
-              <h3 class="trip__title">Черногория</h3>
-              <p class="trip__content">
+              <h3 class="trip__title main-title">Черногория</h3>
+              <p class="trip__content main-content">
                 Черногория удивит нас самым большим в Европе каньоном реки Тара, который в некоторых местах высотой берегов доходит до 1300 метров, а шириной не превышает трех. При этом длина каньона составляет 80 км.
               </p>
               <a class="trip__book btn btn--book">
@@ -280,7 +281,7 @@
               <div class="trip__review review">
                 <h4 class="review__title">Отзывы</h4>
                 <blockquote class="review__item">
-                  <p class="review__content">
+                  <p class="review__content main-content">
                     Неописуемой красоты каньон! Ничего прекраснее в жизни не видела, разве что в фильмах :) Всем советую
                   </p>
                   <picture class="trip__item-image">
@@ -294,8 +295,8 @@
           </li>
           <li class="trip__item" id="croatia">
             <article class="trip__card">
-              <h3 class="trip__title">Хорватия</h3>
-              <p class="trip__content">
+              <h3 class="trip__title main-title">Хорватия</h3>
+              <p class="trip__content main-content">
                 В Хорватии мы посетим необычайную пещеру названную Бередине. Ее подземный мир увлечет вас на 80-ти метровую глубину через 5 освещенных залов, украшенных удивительными нерукотворными скульптурами —  сталактитами и сталагмитами —  формировавшимися тысячи и тысячи лет.
               </p>
               <a class="trip__book btn btn--book">
@@ -314,7 +315,7 @@
               <div class="trip__review review">
                 <h4 class="review__title">Отзывы</h4>
                 <blockquote class="review__item">
-                  <p class="review__content">
+                  <p class="review__content main-content">
                     Мы поехали всей семьей, я, моя жена и родители. Пещера просто незабываема! А то, что все это формировалось тысячелетиями, мега необычно. Первоначально даже не верилось, но натур ни с чем не спутать по итогу :)
                   </p>
                   <picture class="trip__item-image">
@@ -330,7 +331,7 @@
       </section>
       <section class="main__price price" id="price">
         <h2 class="price__title main-title">Цены</h2>
-        <p class="price__content">
+        <p class="price__content main-content">
           Специально для Вас  мы разработали 2 пакета цен с разными условиями, отталкиваясь от Ваших потребностей и возможностей. Выберите для себя лучший вариант отпуска и отдохните на все 100%!
         </p>
         <div class="price__contact price-contact">
@@ -345,9 +346,9 @@
           <ul class="price__list">
             <li class="price__item">
               <input class="price__radio" type="radio" name="type-price" value="economy" id="economy">
-              <label class="price__lable" for="economy">
+              <label class="price__label" for="economy">
                 Экономный
-                <span class="price__lable-price">$1399</span>
+                <span class="price__label-price">$1399</span>
               </label>
               <div class="price__box">
                 <p class="price__appeal">
@@ -377,9 +378,9 @@
             </li>
             <li class="price__item">
               <input class="price__radio" type="radio" name="type-price" value="complex" id="complex">
-              <label class="price__lable" for="complex">
+              <label class="price__label" for="complex">
                 Комплексный
-                <span class="price__lable-price">$1999</span>
+                <span class="price__label-price">$1999</span>
               </label>
               <div class="price__box">
                 <p class="price__appeal">
@@ -423,13 +424,13 @@
               <input class="order-form__input" type="tel" id="phone" name="phone"
               pattern="+7-[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="+7 Введите 10 цифр номера"
               required>
-              <label class="order-form__lable" for="phone">номер телефона</label>
+              <label class="order-form__label visually-hidden" for="phone">номер телефона</label>
             </li>
             <li class="order-form__item">
               <input class="order-form__input" type="email" id="email" name="email"
               pattern=".+@globex.com" placeholder="E-mail"
               required>
-              <label class="order-form__lable" for="email">E-mail</label>
+              <label class="order-form__label visually-hidden" for="email">E-mail</label>
             </li>
           </ul>
           <button class="order-form__btn btn" type="submit">отправить</button>
@@ -439,7 +440,7 @@
 
     <footer class="page__footer footer">
       <section class="footer__next-trip next-trip">
-        <h2 class="next-trip__title footer-title">Следующие путешествия</h2>
+        <h2 class="next-trip__title footer__title">Следующие путешествия</h2>
         <ul class="next-trip__list">
           <li class="next-trip__item">
             <a class="next-trip__link" href="">Марсель</a>
@@ -489,7 +490,7 @@
         </ul>
       </section>
       <section class="footer__contacts us-contacts">
-        <h2 class="us-contacts__title footer-title">Наши контакты</h2>
+        <h2 class="us-contacts__title footer__title">Наши контакты</h2>
         <ul class="us-contacts__list">
           <li class="us-contacts__item">
             <a class="us-contacts__link" href="malto:puteshestviemechta@gmail.ru">puteshestviemechta@gmail.ru</a>
@@ -500,7 +501,7 @@
         </ul>
       </section>
       <section class="footer__corporate-trip corporate-trip">
-        <h2 class="corporate-trip__title footer-title">Корпоративные путешествия</h2>
+        <h2 class="corporate-trip__title footer__title">Корпоративные путешествия</h2>
         <p class="corporate-trip__content">
           Также вы можете заказать индивидуальное путешествие под вашу компанию. Подобные туры очень сближают компанию, помогают поддерживать корпоративный дух, а также являются оличным времяпрепровождением
         </p>
@@ -516,13 +517,13 @@
             <input class="order-form__input" type="tel" id="oreder-phone" name="phone"
             pattern="+7-[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="+7 Введите 10 цифр номера"
             required>
-            <label class="order-form__lable" for="oreder-phone">номер телефона</label>
+            <label class="order-form__label" for="oreder-phone">номер телефона</label>
           </li>
           <li class="order-form__item">
             <input class="order-form__input" type="email" id="oreder-email" name="email"
             pattern=".+@globex.com" placeholder="E-mail"
             required>
-            <label class="order-form__lable" for="oreder-email">E-mail</label>
+            <label class="order-form__label" for="oreder-email">E-mail</label>
           </li>
         </ul>
         <button class="order-form__btn btn" type="submit">отправить</button>

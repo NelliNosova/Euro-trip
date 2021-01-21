@@ -1,0 +1,18 @@
+.place-item {
+  position: relative;
+
+}
+
+.place-item__title {
+  @include medium-font;
+}
+
+.place-item__link {
+  @include medium-font;
+
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: $basic-white;
+}

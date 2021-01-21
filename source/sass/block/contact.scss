@@ -1,0 +1,16 @@
+.contact {
+  position: relative;
+
+}
+
+.contact__question {
+  @include weight-font(25px, 32px);
+
+  color: $basic-dark;
+}
+
+.contact__appeal {
+  @include basic-font(16px, 24px);
+
+  color: $basic-dark;
+}

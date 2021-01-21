@@ -1,0 +1,17 @@
+.price-contact {
+  position: relative;
+}
+
+.price-contact__appeal {
+  @include medium-font(22px, 34px);
+
+  letter-spacing: 1px;
+  color: $basic-dark;
+}
+
+.price-contact__phone {
+  @include basic-font(20px, 32px);
+
+  letter-spacing: 1px;
+  color: $basic-black;
+}
