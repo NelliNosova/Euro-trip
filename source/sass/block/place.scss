@@ -2,3 +2,29 @@
   position: relative;
 }
 
+.place__box {
+  max-width: 358px;
+}
+
+.place__content {
+  margin-top: 65px;
+}
+
+.place__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 55px;
+}
+
+.place-item {
+  margin-bottom: 95px;
+}
+
+.place-item:not(:nth-child(3n)) {
+  margin-right: 60px;
+}
+
+.place-item:nth-child(4) {
+  margin-left: 175px;
+  margin-right: 120px;
+}

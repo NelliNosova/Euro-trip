@@ -2,5 +2,35 @@
   @include medium-font(14px, 17px);
 
   position: relative;
+  letter-spacing: 0;
   color: $basic-dark;
 }
+
+.nav__toggle {
+  @media (min-width:$min-desktop) {
+    display: none;
+  }
+}
+
+.nav__list {
+  @include zero;
+
+  display: flex;
+  margin-right: 13px;
+}
+
+.nav__item {
+  margin-left: 40px;
+  margin-top: 3px;
+}
+
+.nav__item--phone {
+  @include basic-font(18px, 32px);
+
+  margin-top: -3px;
+  padding-left: 53px;
+  letter-spacing: 0;
+  color: $basic-dark;
+  text-decoration: underline;
+}
+

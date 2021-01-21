@@ -1,6 +1,6 @@
 $min-phone: 320px;
 $min-tablet: 768px;
-$min-desktop: 1024px;
+$min-desktop: 1230px;
 
 .visually-hidden {
   position: absolute;
@@ -23,11 +23,14 @@ img {
 }
 
 a {
+  display: inline-block;
   text-decoration: none;
   color: inherit
 }
 
 ul {
+  @include zero;
+  
   list-style: none;
 }
 
@@ -37,10 +40,12 @@ ul {
 
 .main-title {
   @include weight-font;
+  @include zero;
 
   letter-spacing: -1.10667px;
 }
 
 .main-content {
   @include basic-font;
+  @include zero;
 }

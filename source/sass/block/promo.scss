@@ -1,5 +1,10 @@
 .promo {
   position: relative;
+  min-height: 860px;
+  background-color: $dark-grey;
+  background-image: url("../img/promo_desktop.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .promo__title {
@@ -9,5 +14,13 @@
 .promo__content {
   @include basic-font(16px, 27px);
 
+  margin-top: 27px;
+  padding-right: 100px;
   color: $basic-white;
 }
+
+.promo__link {
+  margin-top: 35px;
+  padding: 25px 160px 30px 40px;
+  background-color: $basic-accent;
+  }
