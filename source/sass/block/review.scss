@@ -1,20 +1,40 @@
 .review {
-  position: relative;
+  background-color: $basic-white;
 }
 
 .review__title {
+  @include zero;
+  padding: 30px;
   @include medium-font(30px, 37px);
 
   letter-spacing: -0.691667px;
 }
 
+.review__item {
+  @include zero;
+  padding: 3px 25px 0 30px;
+}
+
 .review__content {
+  @include zero;
+
+  margin-bottom: 98px;
   font-size: 14px;
+}
+
+.review__author-avatar {
+  display: inline-block;
+  position: absolute;
+  bottom: 8%;
+  border-radius: 50%;
 }
 
 .review__author-name {
   @include medium-font(16px, 20px);
 
+  position: absolute;
+  bottom: 10%;
+  left: 22.5%;
   font-style: normal;
   color: $light-dark;
 }

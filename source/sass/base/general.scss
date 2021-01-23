@@ -1,6 +1,6 @@
 $min-phone: 320px;
 $min-tablet: 768px;
-$min-desktop: 1230px;
+$min-desktop: 1024px;
 
 .visually-hidden {
   position: absolute;
@@ -30,7 +30,7 @@ a {
 
 ul {
   @include zero;
-  
+
   list-style: none;
 }
 

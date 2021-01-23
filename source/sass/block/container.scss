@@ -1,16 +1,18 @@
 .container {
   @include padding;
 
-  max-width: $min-desktop;
+  max-width: 84.5%;
   margin: auto;
 }
 
 .container--header {
   display: flex;
   justify-content: space-between;
+
+  // max-width: 1230px;
 }
 
 .container--promo {
-  padding: 187px 20px 50px 731px;
+  padding: 187px 20px 50px 50.2%;
 }
 

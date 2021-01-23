@@ -1,5 +1,6 @@
 .place-item {
   position: relative;
+
 }
 
 .place-item__title {
@@ -9,8 +10,8 @@
   position: absolute;
   display: inline-block;
   bottom: 0;
-  left: 70px;
-  min-width: 215px;
+  left: 20%;
+  min-width: 61%;
   padding: 20px 0;
   text-align: center;
   background-color: $basic-white;

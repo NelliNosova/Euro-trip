@@ -1,9 +1,28 @@
 .trip-nav {
   position: relative;
+  display: inline-block;
+  padding-bottom: 15px;
+  border-bottom: 1px solid rgba($light-dark, 0.3);
 }
 
-.trip-nav__lable {
+.trip-nav__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.trip-nav__radio {
+  position: absolute;
+  appearance: none;
+}
+
+.trip-nav__label {
   @include medium-font(20px, 24px);
+
 
   color: rgba($light-dark, 0.3);
 }
+
+.trip-nav__item:not(:last-child) {
+  margin-right: 100px;
+}
+

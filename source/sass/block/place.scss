@@ -16,15 +16,16 @@
   margin-top: 55px;
 }
 
-.place-item {
+.place__item {
+  width: 30%;
   margin-bottom: 95px;
 }
 
-.place-item:not(:nth-child(3n)) {
-  margin-right: 60px;
+.place__item:not(:nth-child(3n)) {
+  margin-right: 5%;
 }
 
-.place-item:nth-child(4) {
-  margin-left: 175px;
-  margin-right: 120px;
+.place__item:nth-child(4) {
+  margin-left: 15%;
+  margin-right: 10%;
 }

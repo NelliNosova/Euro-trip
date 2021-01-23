@@ -5,3 +5,37 @@
 .trip__title {
   letter-spacing: -1.245px;;
 }
+
+.trip__list {
+  margin-top: 93px;
+}
+
+.trip__content {
+  margin-top: 55px;
+}
+
+.trip__card {
+  position: relative;
+  display: flex;
+}
+
+.trip__content-box {
+  width: 40%;
+  padding-right: 8%;
+  padding-bottom: 19px;
+}
+
+.trip__book {
+  margin-top: 48px;
+}
+
+.trip__box {
+  width: 60%;
+}
+
+.trip__review {
+  position: absolute;
+  top: 17%;
+  right: 0.5%;
+  width: 374px;
+}
