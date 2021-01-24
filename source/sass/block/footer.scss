@@ -1,6 +1,8 @@
 .footer {
+  position: relative;
   @include basic-font(14px, 17px);
 
+  padding-bottom: 75px;
   color: rgba($basic-dark, 0.5);
 }
 
@@ -9,3 +11,23 @@
 
   color: $basic-dark;
 }
+
+.footer__next-trip {
+  flex-basis: 34.5%;
+}
+
+.footer__contacts {
+  flex-basis: 33.5%;
+}
+
+.footer__corporate-trip {
+  flex-basis: 32%;
+}
+
+.footer__title {
+  @include zero;
+
+  letter-spacing: 0;
+}
+
+

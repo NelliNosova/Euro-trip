@@ -1,0 +1,20 @@
+.next-trip {
+  position: relative;
+  margin-left: 12px;
+}
+
+.next-trip__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 22px;
+  letter-spacing: 0;
+}
+
+.next-trip__item {
+  @media (min-width: 1190px) {
+    flex-basis: 33%;
+  }
+
+  flex-basis: 50%;
+  margin-bottom: 10px;
+}

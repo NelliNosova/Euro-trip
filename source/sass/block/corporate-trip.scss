@@ -1,1 +1,13 @@
+.corporate-trip {
+  position: relative;
+  padding-left: 3.5%;
+  padding-right: 10px;
+}
 
+.corporate-trip__content {
+  @include zero;
+
+  margin-top: 25px;
+  letter-spacing: 0;
+  line-height: 170%;
+}

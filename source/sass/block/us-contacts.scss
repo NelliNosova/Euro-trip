@@ -1,0 +1,24 @@
+.us-contacts {
+  position: relative;
+  padding-left: 7%;
+}
+
+.us-contacts__list {
+  margin-top: 25px;
+  padding-left: 40px;
+}
+
+.us-contacts__item {
+  margin-bottom: 25px;
+}
+
+.us-contacts__link {
+  white-space: nowrap;
+  letter-spacing: 0;
+  color: $basic-accent;
+  text-decoration: underline;
+
+  &--phone {
+    font-size: 16px;
+  }
+}
