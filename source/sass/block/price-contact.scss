@@ -3,15 +3,18 @@
 }
 
 .price-contact__appeal {
+  @include zero;
   @include medium-font(22px, 34px);
 
-  letter-spacing: 1px;
+  letter-spacing: 0;
   color: $basic-dark;
 }
 
 .price-contact__phone {
   @include basic-font(20px, 32px);
 
-  letter-spacing: 1px;
+  margin-top: 13px;
+  letter-spacing: 0;
+  white-space: nowrap;
   color: $basic-black;
 }

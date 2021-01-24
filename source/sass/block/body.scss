@@ -1,9 +1,8 @@
 .body {
   display: grid;
   grid-template-rows: min-content 1fr min-content;
-  max-width: 1920px;
+  max-width: $max-width;
   margin: auto;
   background-color: $basic-white;
   color: $basic-black;
-
 }

@@ -6,4 +6,9 @@
   text-transform: uppercase;
   color: $basic-white;
   background-color: $basic-accent;
+  border: none;
+}
+
+.btn--price {
+  padding: 30px 22%;
 }

@@ -8,11 +8,13 @@
 .container--header {
   display: flex;
   justify-content: space-between;
-
-  // max-width: 1230px;
 }
 
 .container--promo {
   padding: 187px 20px 50px 50.2%;
 }
 
+.container--price {
+  display: flex;
+  flex-direction: row-reverse;
+}

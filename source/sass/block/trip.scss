@@ -3,7 +3,13 @@
 }
 
 .trip__title {
-  letter-spacing: -1.245px;;
+  letter-spacing: -1.245px;
+  padding-right: 10px;
+}
+
+.trip__nav {
+  width: 77%;
+  min-width: 850px;
 }
 
 .trip__list {
@@ -21,6 +27,7 @@
 
 .trip__content-box {
   width: 40%;
+  min-width: 370px;
   padding-right: 8%;
   padding-bottom: 19px;
 }
@@ -31,6 +38,24 @@
 
 .trip__box {
   width: 60%;
+  background-position: left;
+  background-repeat: no-repeat;
+
+  &--greece {
+    background-image: url("../img/greece-trip_desktop@1x.jpg");
+  }
+  &--albania {
+    background-image: url("../img/albania-trip_desktop@1x.jpg");
+  }
+  &--macedonia {
+    background-image: url("../img/macedonia-trip_desktop@1x.jpg");
+  }
+  &--montenegro {
+    background-image: url("../img/montenegro-trip_desktop@1x.jpg");
+  }
+  &--croatia {
+    background-image: url("../img/croatia-trip_desktop@1x.jpg");
+  }
 }
 
 .trip__review {
