@@ -2,9 +2,33 @@
   position: relative;
 }
 
+.order-form__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.order-form__input {
+  min-width: 270px;
+  margin-bottom: 20px;
+  padding: 13px 27px;
+  background-color: none;
+
+  &--email {
+    padding-left: 15px;
+  }
+}
+
 .order-form__input::placeholder {
   @include basic-font(14px, 17px);
 
   color: $basic-dark;
+  letter-spacing: 0;
+}
+
+.order-form__btn {
+  display: block;
+  margin: auto;
+  margin-top: 5px;
 }
 

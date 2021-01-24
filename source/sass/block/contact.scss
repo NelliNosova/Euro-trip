@@ -1,16 +1,37 @@
 .contact {
   position: relative;
+}
 
+.contact__box {
+  width: 56%;
+  min-height: 315px;
+  margin-left: auto;
+  margin-right: -12px;
+  padding: 50px 50px;
+  background: $basic-white;
+  box-shadow: 0px 4px 30px rgba(41, 54, 66, 0.1);
+  border-radius: 5px;
+  background-color: $basic-white;
 }
 
 .contact__question {
+  @include zero;
   @include weight-font(25px, 32px);
 
+  text-align: center;
   color: $basic-dark;
 }
 
 .contact__appeal {
+  @include zero;
   @include basic-font(16px, 24px);
 
+  margin-top: 12px;
+  text-align: center;
   color: $basic-dark;
+  letter-spacing: 0;
+}
+
+.contact__form {
+  margin-top: 25px;
 }

@@ -398,32 +398,36 @@
         </section>
       </div>
       <section class="main__contact contact" id="contact">
-        <h2 class="contact__title visually-hidden">
-            Форма связи
-        </h2>
-        <p class="contact__question">
-          У Вас остались вопросы?
-        </p>
-        <p class="contact__appeal">
-          Оставьте свой номер или e-mail и мы свяжемся с Вами
-        </p>
-        <form class="contact__form order-form">
-          <ul class="order-form__list">
-            <li class="order-form__item">
-              <input class="order-form__input" type="tel" id="phone" name="phone"
-              pattern="+7-[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="+7 Введите 10 цифр номера"
-              required>
-              <label class="order-form__label visually-hidden" for="phone">номер телефона</label>
-            </li>
-            <li class="order-form__item">
-              <input class="order-form__input" type="email" id="email" name="email"
-              pattern=".+@globex.com" placeholder="E-mail"
-              required>
-              <label class="order-form__label visually-hidden" for="email">E-mail</label>
-            </li>
-          </ul>
-          <button class="order-form__btn btn" type="submit">отправить</button>
-        </form>
+        <div class="container container--contact">
+          <h2 class="contact__title visually-hidden">
+              Форма связи
+          </h2>
+          <div class="contact__box">
+            <p class="contact__question">
+              У Вас остались вопросы?
+            </p>
+            <p class="contact__appeal">
+              Оставьте свой номер или e-mail и мы свяжемся с Вами
+            </p>
+            <form class="contact__form order-form">
+              <ul class="order-form__list">
+                <li class="order-form__item">
+                  <input class="order-form__input" type="tel" id="phone" name="phone"
+                  pattern="+7-[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="+7 Введите 10 цифр номера"
+                  required>
+                  <label class="order-form__label visually-hidden" for="phone">номер телефона</label>
+                </li>
+                <li class="order-form__item">
+                  <input class="order-form__input order-form__input--email" type="email" id="email" name="email"
+                  pattern=".+@globex.com" placeholder="E-mail"
+                  required>
+                  <label class="order-form__label visually-hidden" for="email">E-mail</label>
+                </li>
+              </ul>
+              <button class="order-form__btn btn btn--order-form" type="submit">отправить</button>
+            </form>
+          </div>
+        </div>
       </section>
     </main>
 
