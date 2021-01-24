@@ -5,24 +5,48 @@
 .trip__title {
   letter-spacing: -1.245px;
   padding-right: 10px;
+
+  @media (max-width: $min-desktop - 1px) {
+    padding-right: 0;
+  }
 }
 
 .trip__nav {
   width: 77%;
   min-width: 850px;
+
+  @media (max-width: $min-desktop - 1px) {
+    margin-left: 40px;
+    min-width: 93.5%;
+  }
 }
 
 .trip__list {
   margin-top: 93px;
+
+  @media (max-width: $min-desktop - 1px) {
+    margin-top: 30px;
+  }
 }
 
 .trip__content {
   margin-top: 55px;
+
+  @media (max-width: $min-desktop - 1px) {
+    margin-top: 22px;
+    text-align: center;
+  }
 }
 
 .trip__card {
   position: relative;
   display: flex;
+
+  @media (max-width: $min-desktop - 1px) {
+
+
+    flex-direction: column;
+  }
 }
 
 .trip__content-box {
@@ -30,10 +54,23 @@
   min-width: 370px;
   padding-right: 8%;
   padding-bottom: 19px;
+
+  @media (max-width: $min-desktop - 1px) {
+    width: 100%;
+    @include padding(20px);
+    padding-bottom: 30px;
+  }
 }
 
 .trip__book {
   margin-top: 48px;
+
+  @media (max-width: $min-desktop - 1px) {
+    display: block;
+    width: 35%;
+    margin: auto;
+    margin-top: 20px;
+  }
 }
 
 .trip__box {
@@ -56,11 +93,42 @@
   &--croatia {
     background-image: url("../img/croatia-trip_desktop@1x.jpg");
   }
+
+  @media (max-width: $min-desktop - 1px) {
+    width: 100%;
+    min-height: 415px;
+
+    &--greece {
+      background-image: url("../img/greece-trip_tablet@1x.jpg");
+    }
+    &--albania {
+      background-image: url("../img/albania-trip_tablet@1x.jpg");
+    }
+    &--macedonia {
+      background-image: url("../img/macedonia-trip_tablet@1x.jpg");
+    }
+    &--montenegro {
+      background-image: url("../img/montenegro-trip_tablet@1x.jpg");
+    }
+    &--croatia {
+      background-image: url("../img/croatia-trip_tablet@1x.jpg");
+    }
+  }
 }
 
 .trip__review {
   position: absolute;
-  top: 17%;
   right: 0.5%;
   width: 374px;
+
+  @media (min-width: $min-desktop) {
+    top: 17%;
+  }
+
+  @media (max-width: $min-desktop - 1px) {
+    bottom: 0;
+    right: 25.5%;
+    width: 380px;
+    margin: auto;
+  }
 }

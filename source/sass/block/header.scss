@@ -1,3 +1,25 @@
 .header {
   padding-top: 40px;
+
+  @media (max-width: $min-desktop - 1px) {
+    padding-top: 16px;
+  }
+}
+
+.header__logo-svg {
+  @media (max-width: $min-desktop - 1px) {
+    width: 44px;
+  }
+}
+
+.header__nav {
+  display: none;
+}
+
+.header__toggle--nav {
+  display: none;
+
+  @media (max-width: $min-desktop - 1px) {
+    display: block;
+  }
 }

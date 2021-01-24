@@ -7,12 +7,29 @@
 .trip-nav__list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .trip-nav__item {
   @media (max-width: 1465px) {
     max-width: 10%;
   }
+  @media (max-width: $min-desktop - 1px) {
+    max-width: 25%;
+    width: 20%;
+  }
+}
+
+.trip-nav__item:not(:last-child) {
+  margin-right: 11%;
+
+  @media (max-width: $min-desktop - 1px) {
+    margin-right: 0;
+  }
+}
+
+.trip-nav__item:last-child {
+  display: none;
 }
 
 .trip-nav__radio {
@@ -27,7 +44,4 @@
   color: rgba($light-dark, 0.3);
 }
 
-.trip-nav__item:not(:last-child) {
-  margin-right: 11%;
-}
 

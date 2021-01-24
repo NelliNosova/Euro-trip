@@ -6,12 +6,6 @@
   color: $basic-dark;
 }
 
-.nav__toggle {
-  @media (min-width:$min-desktop) {
-    display: none;
-  }
-}
-
 .nav__list {
   @include zero;
 

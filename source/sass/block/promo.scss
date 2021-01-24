@@ -5,10 +5,21 @@
   background-image: url("../img/promo_desktop.jpg");
   background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (max-width: $min-desktop - 1px) {
+    width: 100%;
+    min-height: 334px;
+    background-image: url("../img/promo_tablet.jpg");
+  }
 }
 
 .promo__title {
   color: $basic-white;
+
+  @media (max-width: $min-desktop - 1px) {
+    text-align: left;
+  }
 }
 
 .promo__content {
@@ -17,10 +28,24 @@
   margin-top: 27px;
   padding-right: 25%;
   color: $basic-white;
+
+  @media (max-width: $min-desktop - 1px) {
+    margin-top: 15px;
+    padding-right: 15px;
+    text-align: center;
+  }
 }
 
 .promo__link {
   margin-top: 35px;
   padding: 25px 160px 30px 40px;
   background-color: $basic-accent;
+
+  @media (max-width: $min-desktop - 1px) {
+    display: block;
+    margin-left: 18%;
+    margin-top: 10px;
+    padding: 13px 30px 18px 40px;
+    width: 60%;
   }
+}

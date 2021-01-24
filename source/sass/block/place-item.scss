@@ -1,6 +1,5 @@
 .place-item {
   position: relative;
-
 }
 
 .place-item__title {
@@ -19,6 +18,11 @@
   @media (min-width: 1380px) {
     left: 65px;
     min-width: 210px;
+  }
+
+  @media (max-width: $min-desktop - 1px) {
+    left: 12%;
+    min-width: 75%;
   }
 }
 

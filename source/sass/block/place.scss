@@ -4,28 +4,61 @@
 
 .place__box {
   max-width: 358px;
+
+  @media (max-width: $min-desktop - 1px) {
+    max-width: 100%;
+  }
 }
 
 .place__content {
   margin-top: 65px;
+
+  @media (max-width: $min-desktop - 1px) {
+    margin: auto;
+    margin-top: 20px;
+    max-width: 50%;
+    text-align: center;
+  }
 }
 
 .place__list {
   display: flex;
   flex-wrap: wrap;
   margin-top: 55px;
+
+  @media (max-width: $min-desktop - 1px) {
+    width: 92%;
+    margin: auto;
+    margin-top: 40px;
+    padding: 0 5px 0 10px;
+    justify-content: space-around;
+  }
 }
 
 .place__item {
   width: 30%;
   margin-bottom: 95px;
+
+  @media (max-width: $min-desktop - 1px) {
+    width: 44.4%;
+    margin-bottom: 17px;
+  }
 }
 
 .place__item:not(:nth-child(3n)) {
   margin-right: 5%;
+
+  @media (max-width: $min-desktop - 1px) {
+    margin-right: 0;
+  }
 }
 
 .place__item:nth-child(4) {
   margin-left: 15%;
   margin-right: 10%;
+
+  @media (max-width: $min-desktop - 1px) {
+    margin-right: 0;
+    margin-left: 0
+  }
 }

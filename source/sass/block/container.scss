@@ -3,6 +3,11 @@
 
   max-width: 84.5%;
   margin: auto;
+
+  @media (max-width: $min-desktop - 1px) {
+    @include padding(20px);
+    max-width: 100%;
+  }
 }
 
 .container--header {
@@ -12,6 +17,18 @@
 
 .container--promo {
   padding: 187px 20px 50px 50.2%;
+
+  @media (max-width: $min-desktop - 1px) {
+    padding: 60px 20px 83px 4.3%;
+    width: 60%;
+    margin: auto;
+  }
+}
+
+.container--trip {
+  @media (max-width: $min-desktop - 1px) {
+    padding: 0;
+  }
 }
 
 .container--price {

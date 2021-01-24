@@ -1,12 +1,35 @@
 .btn {
   padding: 30px 40px;
   font-size: 12px;
-  font-weight: 15px;
+  line-height: 15px;
   letter-spacing: 2.3px;
   text-transform: uppercase;
   color: $basic-white;
   background-color: $basic-accent;
   border: none;
+
+  @media (max-width: $min-desktop - 1px) {
+    font-size: 10px;
+    line-height: 13px;
+    letter-spacing: 2px;
+  }
+}
+
+.btn--nav {
+  @media (max-width: $min-desktop - 1px) {
+    padding: 10px 20px;
+    width: 72px;
+    height: 50px;
+    margin-top: -16px;
+    margin-right: -27px;
+  }
+}
+
+.btn--book {
+  @media (max-width: $min-desktop - 1px) {
+    padding: 18px;
+    text-align: center;
+  }
 }
 
 .btn--price {
@@ -16,3 +39,5 @@
 .btn--order-form {
   padding: 19px 37px;
 }
+
+

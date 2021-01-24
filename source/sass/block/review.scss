@@ -12,7 +12,12 @@
 
 .review__item {
   @include zero;
-  padding: 3px 25px 0 30px;
+  padding: 3px 25px 50px 30px;
+
+  @media (max-width: $min-desktop - 1px) {
+    padding-right: 30px;
+    padding-bottom: 62px;
+  }
 }
 
 .review__content {
@@ -20,6 +25,10 @@
 
   margin-bottom: 98px;
   font-size: 14px;
+
+  @media (max-width: $min-desktop - 1px) {
+    margin-bottom: 5px;
+  }
 }
 
 .review__author-avatar {
@@ -27,6 +36,10 @@
   position: absolute;
   bottom: 8%;
   border-radius: 50%;
+
+  @media (max-width: $min-desktop - 1px) {
+    bottom: 0;
+  }
 }
 
 .review__author-name {
@@ -37,4 +50,9 @@
   left: 22.5%;
   font-style: normal;
   color: $light-dark;
+
+  @media (max-width: $min-desktop - 1px) {
+    bottom: 1.5%;
+    left: 21.5%;
+  }
 }

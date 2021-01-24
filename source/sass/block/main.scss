@@ -4,10 +4,18 @@
 
 .main__promo {
   margin-top: 30px;
+
+  @media (max-width: $min-desktop - 1px) {
+    margin-top: 0;
+  }
 }
 
 .main__place {
   margin-top: 200px;
+
+  @media (max-width: $min-desktop - 1px) {
+    margin-top: 80px;
+  }
 }
 
 .main__background-box {
@@ -15,6 +23,12 @@
   background-repeat: no-repeat;
   background-position-x: center;
   background-position-y: 130px;
+}
+
+.main__trip {
+  @media (max-width: $min-desktop - 1px) {
+    margin-top: 85px;
+  }
 }
 
 .main__price {
