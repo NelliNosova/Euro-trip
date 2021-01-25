@@ -11,4 +11,8 @@
 
 .page__footer {
   margin-top: 170px;
+
+  @media (max-width: $min-desktop - 1px) {
+    margin-top: 78px;
+  }
 }

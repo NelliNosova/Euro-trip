@@ -14,14 +14,34 @@
 
 .footer__next-trip {
   flex-basis: 34.5%;
+  margin-left: 12px;
+
+  @media (max-width: $min-desktop - 1px) {
+    flex-basis: 52%;
+    margin-left: 0;
+  }
 }
 
 .footer__contacts {
   flex-basis: 33.5%;
+  padding-left: 7%;
+
+  @media (max-width: $min-desktop - 1px) {
+    flex-basis: 48%;
+    padding-left: 10%;
+  }
 }
 
 .footer__corporate-trip {
   flex-basis: 32%;
+  padding-left: 3.5%;
+  padding-right: 10px;
+
+  @media (max-width: $min-desktop - 1px) {
+    flex-basis: 100%;
+    margin-top: 47px;
+    padding: 0;
+  }
 }
 
 .footer__title {

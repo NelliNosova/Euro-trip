@@ -13,7 +13,9 @@
 }
 
 .header__nav {
-  display: none;
+  @media (max-width: $min-desktop - 1px) {
+    display: none;
+  }
 }
 
 .header__toggle--nav {

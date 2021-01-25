@@ -19,7 +19,7 @@
   padding: 187px 20px 50px 50.2%;
 
   @media (max-width: $min-desktop - 1px) {
-    padding: 60px 20px 83px 4.3%;
+    padding: 60px 0 83px 0;
     width: 60%;
     margin: auto;
   }
@@ -34,6 +34,9 @@
 .container--price {
   display: flex;
   flex-direction: row-reverse;
+  @media (max-width: $min-desktop - 1px) {
+    flex-direction: column;
+  }
 }
 
 .container--contact {
@@ -43,8 +46,18 @@
   background-repeat: no-repeat;
   background-position-x: 11%;
   background-size: auto 100%;
+
+  @media (max-width: $min-desktop - 1px) {
+    padding-top: 70px;
+    padding-bottom: 74px;
+    background-size: cover;
+  }
 }
 
 .container--footer {
   display: flex;
+
+  @media (max-width: $min-desktop - 1px) {
+    flex-wrap: wrap;
+  }
 }

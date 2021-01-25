@@ -8,4 +8,8 @@
   margin-bottom: 15px;
   letter-spacing: 0;
   color: $light-dark;
+
+  @media (max-width: $min-desktop - 1px) {
+    margin-bottom: 10px;
+  }
 }

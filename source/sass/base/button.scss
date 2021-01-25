@@ -34,6 +34,10 @@
 
 .btn--price {
   padding: 30px 22%;
+
+  @media (max-width: $min-desktop - 1px) {
+    padding: 18px 22%;
+  }
 }
 
 .btn--order-form {

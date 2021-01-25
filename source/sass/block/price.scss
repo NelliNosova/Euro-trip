@@ -17,28 +17,50 @@
 
 .price__box {
   max-width: 30%;
+
+  @media (max-width: $min-desktop - 1px) {
+    max-width: 100%;
+  }
 }
 
 .price__title {
   margin: 119px 0 0 18%;
   letter-spacing: 0;
+
+  @media (max-width: $min-desktop - 1px) {
+    margin: 0;
+  }
 }
 
 .price__content {
   margin: 50px -5px 0 18%;
   letter-spacing: 0.05px;
   line-height: 170%;
+
+  @media (max-width: $min-desktop - 1px) {
+    margin: 20px 0;
+    text-align: center;
+  }
 }
 
 .price__contact {
   margin-top: 62px;
   margin-left: 31%;
+
+  @media (max-width: $min-desktop - 1px) {
+    margin: 34px 0 28px;
+  }
 }
 
 .price__list {
   display: flex;
   flex-direction: row-reverse;
   margin-right: 10px;
+
+  @media (max-width: $min-desktop - 1px) {
+    justify-content: space-between;
+    margin: 0 45px;
+  }
 }
 
 .price__item {
@@ -50,6 +72,11 @@
   margin-right: 4.5%;
   border: solid 1px rgba($light-dark, 0.3);
   border-radius: 6px;
+
+  @media (max-width: $min-desktop - 1px) {
+    min-height: 629px;
+    margin-right: 0;
+  }
 }
 
 .price__radio {
@@ -62,10 +89,33 @@
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 40px 10px 10px 25px;
+
+  @media (max-width: $min-desktop - 1px) {
+    padding: 30px 0 0;
+    text-align: center;
+  }
+}
+
+.price__name {
+  @media (max-width: $min-desktop - 1px) {
+    width: 100%;
+    font-size: 24px;
+    line-height: 38px;
+  }
 }
 
 .price__label-price {
   padding-right: 20px;
+
+  @media (max-width: $min-desktop - 1px) {
+    width: 100%;
+    margin-top: 5px;
+    padding-right: 0;
+    font-size: 25px;
+    line-height: 34px;
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
 }
 
 .price__content-box {
@@ -75,6 +125,10 @@
   flex-grow: 2;
   min-height: 78.2%;
   margin: 28px 30px 15px 25px;
+
+  @media (max-width: $min-desktop - 1px) {
+    margin: 14px 0 0 0;
+  }
 }
 
 .price__appeal {
@@ -82,13 +136,28 @@
 
   padding-right: 30px;
   letter-spacing: 0;
+
+  @media (max-width: $min-desktop - 1px) {
+    margin: 0 20px;
+    padding: 0 0 7px 0;
+    text-align: center;
+  }
 }
 
 .price__advantage {
   flex-grow: 2;
   margin: 58px 20px 15px 30px;
+
+  @media (max-width: $min-desktop - 1px) {
+    margin: 22px 20px 19px;
+    padding-left: 30px;
+  }
 }
 
 .price__btn {
   margin-bottom: 12px;
+
+  @media (max-width: $min-desktop - 1px) {
+    margin-bottom: 0;
+  }
 }
