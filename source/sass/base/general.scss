@@ -51,6 +51,10 @@ ul {
     letter-spacing: 0;
     text-align: center;
   }
+
+  @media (max-width: $min-tablet - 1px) {
+    font-size: 24px;
+  }
 }
 
 .main-content {

@@ -5,7 +5,7 @@
   margin: auto;
 
   @media (max-width: $min-desktop - 1px) {
-    @include padding(20px);
+    @include padding(20px, 20px);
     max-width: 100%;
   }
 }
@@ -13,15 +13,30 @@
 .container--header {
   display: flex;
   justify-content: space-between;
+
+  @media (max-width: $min-desktop - 1px) {
+    padding-right: 0;
+  }
 }
 
 .container--promo {
   padding: 187px 20px 50px 50.2%;
 
   @media (max-width: $min-desktop - 1px) {
-    padding: 60px 0 83px 0;
     width: 60%;
+    padding: 60px 0 83px 0;
     margin: auto;
+  }
+
+  @media (max-width: $min-tablet - 1px) {
+    width: 89%;
+    padding: 82px 0 83px 0;
+  }
+}
+
+.container--place {
+  @media (max-width: $min-tablet - 1px) {
+    @include padding(15px, 15px);
   }
 }
 
@@ -52,6 +67,12 @@
     padding-bottom: 74px;
     background-size: cover;
   }
+
+  @media (max-width: $min-tablet - 1px) {
+    padding: 20px 15px 50px;
+    background-image: none;
+    background-color: $light-grey;
+  }
 }
 
 .container--footer {
@@ -59,5 +80,9 @@
 
   @media (max-width: $min-desktop - 1px) {
     flex-wrap: wrap;
+  }
+
+  @media (max-width: $min-tablet - 1px) {
+    @include padding(15px, 15px);
   }
 }

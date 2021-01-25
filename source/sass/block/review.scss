@@ -8,6 +8,13 @@
   @include medium-font(30px, 37px);
 
   letter-spacing: -0.691667px;
+
+  @media (max-width: $min-tablet - 1px) {
+    padding-top: 33px;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+  }
 }
 
 .review__item {
@@ -17,6 +24,13 @@
   @media (max-width: $min-desktop - 1px) {
     padding-right: 30px;
     padding-bottom: 62px;
+  }
+
+  @media (max-width: $min-tablet - 1px) {
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px 50px;
+    text-align: center;
   }
 }
 
@@ -40,6 +54,13 @@
   @media (max-width: $min-desktop - 1px) {
     bottom: 0;
   }
+
+  @media (max-width: $min-tablet - 1px) {
+
+    position: relative;
+    margin-top: 14px;
+    text-align: center;
+  }
 }
 
 .review__author-name {
@@ -54,5 +75,16 @@
   @media (max-width: $min-desktop - 1px) {
     bottom: 1.5%;
     left: 21.5%;
+  }
+
+  @media (max-width: $min-tablet - 1px) {
+    display: inline-block;
+    position: relative;
+    bottom: auto;
+    left: auto;
+    width: 100%;
+    margin: auto;
+    margin-top: 7px;
+    padding-left: 10px;
   }
 }

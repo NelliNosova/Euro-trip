@@ -15,4 +15,8 @@
   @media (max-width: $min-desktop - 1px) {
     margin-top: 78px;
   }
+
+  @media (max-width: $min-tablet - 1px) {
+    margin-top: 70px;
+  }
 }

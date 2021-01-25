@@ -50,6 +50,10 @@
   @media (max-width: $min-desktop - 1px) {
     margin: 34px 0 28px;
   }
+
+  @media (max-width: $min-tablet - 1px) {
+    margin-top: 20px;
+  }
 }
 
 .price__list {
@@ -60,6 +64,12 @@
   @media (max-width: $min-desktop - 1px) {
     justify-content: space-between;
     margin: 0 45px;
+  }
+
+  @media (max-width: $min-tablet - 1px) {
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    margin: 10px 0;
   }
 }
 
@@ -76,6 +86,14 @@
   @media (max-width: $min-desktop - 1px) {
     min-height: 629px;
     margin-right: 0;
+  }
+
+  @media (max-width: $min-tablet - 1px) {
+    width: 100%;
+    max-width: 288px;
+    min-height: 614px;
+    margin: auto;
+    margin-bottom: 30px;
   }
 }
 
@@ -151,6 +169,11 @@
   @media (max-width: $min-desktop - 1px) {
     margin: 22px 20px 19px;
     padding-left: 30px;
+  }
+
+  @media (max-width: $min-desktop - 1px) {
+    margin-right: 10px;
+    margin-bottom: 22px;
   }
 }
 

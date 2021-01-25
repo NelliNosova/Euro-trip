@@ -23,5 +23,7 @@
 
   @media (max-width: $min-desktop - 1px) {
     display: block;
+    position: absolute;
+    right: 30px;
   }
 }

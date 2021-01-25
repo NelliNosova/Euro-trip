@@ -6,6 +6,10 @@
 .us-contacts__list {
   margin-top: 25px;
   padding-left: 40px;
+
+  @media (max-width: $min-tablet - 1px) {
+    text-align: center;
+  }
 }
 
 .us-contacts__item {

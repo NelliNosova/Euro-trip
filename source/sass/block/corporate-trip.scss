@@ -16,4 +16,9 @@
   @media (max-width: $min-desktop - 1px) {
     margin-top: 23px;
   }
+
+  @media (max-width: $min-tablet - 1px) {
+    margin-top: 20px;
+    line-height: 175%;
+  }
 }

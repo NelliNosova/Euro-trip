@@ -16,6 +16,10 @@
   @media (max-width: $min-desktop - 1px) {
     margin-top: 80px;
   }
+
+  @media (max-width: $min-tablet - 1px) {
+    margin-top: 28px;
+  }
 }
 
 .main__background-box {
@@ -31,6 +35,10 @@
   @media (max-width: $min-desktop - 1px) {
     margin-top: 85px;
   }
+
+  @media (max-width: $min-tablet - 1px) {
+    margin-top: 5px;
+  }
 }
 
 .main__price {
@@ -39,6 +47,10 @@
   @media (max-width: $min-desktop - 1px) {
     margin-top: 112px;
   }
+
+  @media (max-width: $min-tablet - 1px) {
+    margin-top: 28px;
+  }
 }
 
 .main__contact {
@@ -46,5 +58,9 @@
 
   @media (max-width: $min-desktop - 1px) {
     margin-top: 125px;
+  }
+
+  @media (max-width: $min-tablet - 1px) {
+    margin-top: 8px;
   }
 }

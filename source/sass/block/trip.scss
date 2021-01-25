@@ -9,6 +9,10 @@
   @media (max-width: $min-desktop - 1px) {
     padding-right: 0;
   }
+
+  @media (max-width: $min-tablet - 1px) {
+    letter-spacing: 0.5px;
+  }
 }
 
 .trip__nav {
@@ -19,6 +23,11 @@
     margin-left: 40px;
     min-width: 93.5%;
   }
+
+  @media (max-width: $min-tablet - 1px) {
+    margin-left: 15px;
+    min-width: 93.5%;
+  }
 }
 
 .trip__list {
@@ -26,6 +35,10 @@
 
   @media (max-width: $min-desktop - 1px) {
     margin-top: 30px;
+  }
+
+  @media (max-width: $min-tablet - 1px) {
+    margin-top: 24px;
   }
 }
 
@@ -35,6 +48,10 @@
   @media (max-width: $min-desktop - 1px) {
     margin-top: 22px;
     text-align: center;
+  }
+
+  @media (max-width: $min-tablet - 1px) {
+    margin-top: 20px;
   }
 }
 
@@ -55,8 +72,14 @@
 
   @media (max-width: $min-desktop - 1px) {
     width: 100%;
-    @include padding(20px);
+    @include padding(20px, 20px);
     padding-bottom: 30px;
+  }
+
+  @media (max-width: $min-tablet - 1px) {
+    width: 95%;
+    min-width: 100%;
+    padding-bottom: 50px;
   }
 }
 
@@ -68,6 +91,11 @@
     width: 35%;
     margin: auto;
     margin-top: 20px;
+  }
+
+  @media (max-width: $min-tablet - 1px) {
+    width: 100%;
+    margin-top: 18px;
   }
 }
 
@@ -115,6 +143,11 @@
       background-image: url("../img/croatia-trip_tablet@1x.jpg");
     }
   }
+
+  @media (max-width: $min-tablet - 1px) {
+    background-position: center top;
+    background-size: auto;
+  }
 }
 
 .trip__review {
@@ -130,5 +163,10 @@
     position: relative;
     align-self: flex-end;
     width: 380px;
+  }
+
+  @media (max-width: $min-tablet - 1px) {
+    width: 268px;
+    margin-top: 50px;
   }
 }

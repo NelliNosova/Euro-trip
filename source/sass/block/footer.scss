@@ -4,12 +4,20 @@
 
   padding-bottom: 75px;
   color: rgba($basic-dark, 0.5);
+
+  @media (max-width: $min-tablet - 1px) {
+    padding-bottom: 50px;
+  }
 }
 
 .footer__title {
   @include weight-font(18px, 32px);
 
   color: $basic-dark;
+
+  @media (max-width: $min-tablet - 1px) {
+    text-align: center;
+  }
 }
 
 .footer__next-trip {
@@ -20,6 +28,10 @@
     flex-basis: 52%;
     margin-left: 0;
   }
+
+  @media (max-width: $min-tablet - 1px) {
+    flex-basis: 100%;
+  }
 }
 
 .footer__contacts {
@@ -29,6 +41,12 @@
   @media (max-width: $min-desktop - 1px) {
     flex-basis: 48%;
     padding-left: 10%;
+  }
+
+  @media (max-width: $min-tablet - 1px) {
+    flex-basis: 100%;
+    margin-top: 40px;
+    padding-left: 0;
   }
 }
 
@@ -41,6 +59,10 @@
     flex-basis: 100%;
     margin-top: 47px;
     padding: 0;
+  }
+
+  @media (max-width: $min-tablet - 1px) {
+    margin-top: 25px;
   }
 }
 

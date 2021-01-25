@@ -7,6 +7,10 @@
   flex-wrap: wrap;
   margin-top: 22px;
   letter-spacing: 0;
+
+  @media (max-width: $min-tablet - 1px) {
+    justify-content: space-between;
+  }
 }
 
 .next-trip__item {
@@ -20,4 +24,23 @@
   @media (max-width: $min-desktop - 1px) {
     flex-basis: 33.3%;
   }
+
+  @media (max-width: $min-tablet - 1px) {
+    flex-basis: 46%;
+    text-align: center;
+  }
 }
+
+.next-trip__item:nth-child(3n) {
+  @media (max-width: $min-tablet - 1px) {
+    flex-basis: 100%;
+    order: 10;
+  }
+}
+
+.next-trip__item:nth-child(3) {
+  @media (max-width: $min-tablet - 1px) {
+    margin-top: 8px;
+  }
+}
+
