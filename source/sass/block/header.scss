@@ -6,24 +6,34 @@
   }
 }
 
+.header__logo {
+  @media (max-width: $min-desktop - 1px) {
+    margin-left: 20px;
+  }
+}
+
 .header__logo-svg {
   @media (max-width: $min-desktop - 1px) {
     width: 44px;
   }
 }
 
-.header__nav {
-  @media (max-width: $min-desktop - 1px) {
-    display: none;
-  }
-}
-
-.header__toggle--nav {
+.header__toggle {
   display: none;
 
   @media (max-width: $min-desktop - 1px) {
-    display: block;
     position: absolute;
+    right: 27px;
+  }
+
+  @media (max-width: $min-tablet - 1px) {
     right: 30px;
+  }
+}
+
+
+.header__toggle--show {
+  @media (max-width: $min-desktop - 1px) {
+    display: block;
   }
 }

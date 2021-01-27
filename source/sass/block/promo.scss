@@ -22,6 +22,10 @@
 
 .promo__title {
   color: $basic-white;
+
+  &::after {
+    background-color: transparent;
+  }
 }
 
 .promo__content {
@@ -46,9 +50,10 @@
 }
 
 .promo__link {
+  position: relative;
   width: 70%;
   margin-top: 35px;
-  padding: 25px 40px 30px 40px;
+  padding: 30px 40px 29px 40px;
   background-color: $basic-accent;
 
   @media (max-width: $min-desktop - 1px) {
@@ -56,12 +61,31 @@
     margin: auto;
     width: 55%;
     margin-top: 10px;
-    padding: 13px 30px 18px 40px;
+    padding: 20px 30px 18px 40px;
+  }
+
+  @media (max-width: $min-tablet - 1px) {
+    padding-right: 60px;
   }
 
   @media (max-width: 330px) {
     width: 100%;
     margin-top: 20px;
     padding: 13px 30px 18px 40px;
+  }
+}
+
+.promo__link-svg {
+  position: absolute;
+  right: 35px;
+
+  @media (max-width: $min-desktop - 1px) {
+    width: 20px;
+    top: 20px;
+    right: 40px;
+  }
+
+  @media (max-width: $min-tablet - 1px) {
+    right: 20px;
   }
 }

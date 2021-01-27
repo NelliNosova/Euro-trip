@@ -15,7 +15,9 @@
   justify-content: space-between;
 
   @media (max-width: $min-desktop - 1px) {
+    flex-direction: column;
     padding-right: 0;
+    padding-left: 0;
   }
 }
 
@@ -49,6 +51,8 @@
 .container--price {
   display: flex;
   flex-direction: row-reverse;
+  padding-right: 25px;
+
   @media (max-width: $min-desktop - 1px) {
     flex-direction: column;
   }

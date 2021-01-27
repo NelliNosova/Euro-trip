@@ -83,6 +83,14 @@
   }
 }
 
+.trip__title {
+  &::after {
+    width: 46%;
+    height: 3px;
+    bottom: -22px;
+  }
+}
+
 .trip__book {
   margin-top: 48px;
 

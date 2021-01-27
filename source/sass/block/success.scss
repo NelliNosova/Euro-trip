@@ -1,0 +1,16 @@
+.success {
+  @include medium-font(25px, 170%);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  padding: 0 20px;
+  color: $success-text;
+  text-align: center;
+  background-color: $light-grey;
+}

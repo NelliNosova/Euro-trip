@@ -5,9 +5,23 @@
 .advantage__item {
   @include basic-font(16px, 32px);
 
+  position: relative;
   margin-bottom: 15px;
   letter-spacing: 0;
   color: $light-dark;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 7px;
+    left: -26px;
+    width: 14px;
+    height: 10px;
+    border-bottom: 2px solid $basic-accent;
+    border-left: 2px solid $basic-accent;
+    border-radius: 2px;
+    transform: rotate(-52deg) skew(-4deg);
+  }
 
   @media (max-width: $min-desktop - 1px) {
     margin-bottom: 10px;

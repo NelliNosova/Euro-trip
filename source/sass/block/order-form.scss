@@ -1,5 +1,14 @@
 .order-form {
   position: relative;
+
+  @media (max-width: $min-desktop - 1px) {
+    &--modal {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      flex-basis: 70%;
+    }
+  }
 }
 
 .order-form__list {
@@ -53,11 +62,23 @@
 
   @media (max-width: $min-desktop - 1px) {
     width: 45%;
+
+    &--modal {
+      margin-bottom: 0;
+    }
   }
 
   @media (max-width: $min-tablet - 1px) {
     width: 100%;
     margin-top: 0;
+
+
+  }
+
+  @media (max-width: 450px) {
+    &--modal {
+      margin-bottom: 185px;
+    }
   }
 }
 

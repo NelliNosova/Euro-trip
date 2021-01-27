@@ -43,7 +43,18 @@ ul {
   @include weight-font;
   @include zero;
 
+  position: relative;
   letter-spacing: -1.10667px;
+
+  &::after {
+    position: absolute;
+    content: "";
+    left: 3px;
+    bottom: -33px;
+    width: 64%;
+    height: 4px;
+    background-color: $basic-accent;
+  }
 
   @media (max-width: $min-desktop - 1px) {
     font-size: 30px;
